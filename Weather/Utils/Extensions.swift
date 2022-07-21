@@ -29,3 +29,19 @@ extension View {
                 Blur(radius: radius, opaque: opaque))
     }
 }
+
+extension View {
+    func innerShadow<S: Shape, SS: ShapeStyle>(shape: S, color: SS, lineWidth: CGFloat = 1, offsetX: CGFloat = 0, offsetY: CGFloat = 0, blur: CGFloat = 4, blendMode: BlendMode = .normal, opasity: Double = 1) -> some View {
+        return self
+            .overlay {
+                //MARK: Bottom Sheet Inner Shadow (Border)
+                shape
+                    .stroke(color, lineWidth: lineWidth)
+                    .blendMode(blendMode)
+                    .offset(x: offsetX, y: offsetY)
+                    .blur(radius: blur)
+                    .mask(shape)
+                    .opacity(opasity)
+            }
+    }
+}

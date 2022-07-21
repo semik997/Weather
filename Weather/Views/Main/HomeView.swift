@@ -15,6 +15,7 @@ enum BottomSheetPosition: CGFloat, CaseIterable {
 
 struct HomeView: View {
     @State var bottomSheetPosition: BottomSheetPosition = .middle
+    @State var bottomSheetTranslation: CGFloat = BottomSheetPosition.middle.rawValue
     var body: some View {
         NavigationView {
             ZStack {
