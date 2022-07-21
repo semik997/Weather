@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TabBar: View {
     var action: () -> Void
-     
+    
     var body: some View {
         ZStack {
             //MARK: Arc Shape

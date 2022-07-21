@@ -18,7 +18,7 @@ struct Arc: Shape {
         path.addLine(to: CGPoint(x: rect.minX - 1, y: rect.maxY + 1))
         path.closeSubpath()
         
-         return path
+        return path
     }
 }
 
