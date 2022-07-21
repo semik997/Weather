@@ -12,6 +12,9 @@
 		2FBEE8762889A47400978B70 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 2FBEE8752889A47400978B70 /* BottomSheet */; };
 		2FBEE8782889A73800978B70 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBEE8772889A73800978B70 /* ForecastView.swift */; };
 		2FBEE87A2889AB3C00978B70 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBEE8792889AB3C00978B70 /* Blur.swift */; };
+		2FBEE87C2889C1E200978B70 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBEE87B2889C1E100978B70 /* SegmentedControl.swift */; };
+		2FBEE87E2889C88600978B70 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBEE87D2889C88600978B70 /* ForecastModel.swift */; };
+		2FBEE8802889CF0500978B70 /* ForecastCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBEE87F2889CF0500978B70 /* ForecastCard.swift */; };
 		2FFB397D28896DF600613D77 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB397C28896DF600613D77 /* WeatherApp.swift */; };
 		2FFB397F28896DF600613D77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB397E28896DF600613D77 /* ContentView.swift */; };
 		2FFB398128896DF800613D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB398028896DF800613D77 /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 		2FBEE8722889841D00978B70 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		2FBEE8772889A73800978B70 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
 		2FBEE8792889AB3C00978B70 /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
+		2FBEE87B2889C1E100978B70 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		2FBEE87D2889C88600978B70 /* ForecastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
+		2FBEE87F2889CF0500978B70 /* ForecastCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCard.swift; sourceTree = "<group>"; };
 		2FFB397928896DF600613D77 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFB397C28896DF600613D77 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		2FFB397E28896DF600613D77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 		2FFB398B28896F5000613D77 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2FBEE87D2889C88600978B70 /* ForecastModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -139,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				2FBEE8792889AB3C00978B70 /* Blur.swift */,
+				2FBEE87B2889C1E100978B70 /* SegmentedControl.swift */,
+				2FBEE87F2889CF0500978B70 /* ForecastCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -219,13 +228,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FBEE8802889CF0500978B70 /* ForecastCard.swift in Sources */,
 				2FFB397F28896DF600613D77 /* ContentView.swift in Sources */,
+				2FBEE87C2889C1E200978B70 /* SegmentedControl.swift in Sources */,
 				2FFB3994288976D200613D77 /* HomeView.swift in Sources */,
 				2FBEE87A2889AB3C00978B70 /* Blur.swift in Sources */,
 				2FFB39922889704900613D77 /* Extensions.swift in Sources */,
 				2FFB397D28896DF600613D77 /* WeatherApp.swift in Sources */,
 				2FBEE8782889A73800978B70 /* ForecastView.swift in Sources */,
 				2FBEE87128897F7200978B70 /* TabBar.swift in Sources */,
+				2FBEE87E2889C88600978B70 /* ForecastModel.swift in Sources */,
 				2FBEE8732889841D00978B70 /* Shapes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

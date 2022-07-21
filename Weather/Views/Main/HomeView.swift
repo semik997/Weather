@@ -43,7 +43,7 @@ struct HomeView: View {
                     //MARK: House image
                     Image("House")
                         .frame(maxHeight: .infinity, alignment: .top)
-                        .padding(.top, 280)
+                        .padding(.top, 257)
                         .offset(y: -bottomSheetTranslationProrated * imageOffset)
                     
                     //MARK: Current Weather
